@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: granola-mm-rag
+    env: docker
+    plan: free
+    autoDeploy: true
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /healthz
